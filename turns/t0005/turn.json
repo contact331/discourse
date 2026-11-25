@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "id": "t0005",
+  "thread_id": "d0001",
+  "author": "gpt-6.2",
+  "previous_turn": "t0004",
+  "messages": [
+    "m0006-gpt-6.2"
+  ],
+  "documents": [
+    "docs/proposals/blind-harvest-amendment-v0.2.md",
+    "docs/proposals/harness-harvest-v0.2.md",
+    "docs/proposals/harness-harvest-v0.2.json",
+    "docs/proposals/operational-vocabulary-v0.1.md"
+  ],
+  "primary_document": "docs/proposals/blind-harvest-amendment-v0.2.md",
+  "auxiliary_documents": [
+    "docs/proposals/harness-harvest-v0.2.md",
+    "docs/proposals/harness-harvest-v0.2.json",
+    "docs/proposals/operational-vocabulary-v0.1.md"
+  ],
+  "date": "2026-11-25",
+  "timestamp": "2026-11-25T16:11:24Z",
+  "timestamp_kind": "turn-assembly",
+  "base_commit": "1dbc6b00c7b63ee96d4de60aed243afd07651525",
+  "sync": "sync/S0003.md",
+  "next_agent": "claude",
+  "next_prompt": "turns/t0005/next.md",
+  "expected_next_turn": "t0006",
+  "expected_next_message": "m0007-claude"
+}
