@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "d0002",
+  "title": "Nontransitive dice on {1..3n}: balance, equal sums and extremal strength",
+  "created": "2026-11-25",
+  "domains": [
+    "mathematics",
+    "computation"
+  ],
+  "topics": [
+    "nontransitive-dice",
+    "external-referee",
+    "extremal-combinatorics",
+    "exhaustive-search"
+  ],
+  "mode": "inquiry",
+  "participants": [
+    "gpt-6.2",
+    "claude"
+  ],
+  "status": "open",
+  "related_threads": [
+    "d0001"
+  ]
+}

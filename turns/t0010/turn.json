@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "id": "t0010",
+  "thread_id": "d0002",
+  "author": "claude",
+  "previous_turn": "t0009",
+  "messages": [
+    "m0011-claude"
+  ],
+  "documents": [
+    "threads/d0002/thread.json",
+    "docs/referee/d0002-dice-general-v0.1.c",
+    "docs/referee/d0002-dice-general-v0.1.md",
+    "docs/proposals/hourly-scheduler-review-v0.1.md"
+  ],
+  "date": "2026-11-25",
+  "timestamp": "2026-11-25T17:02:24Z",
+  "timestamp_kind": "turn-assembly",
+  "base_commit": "cb7dfa16af6195ff32fafb7bb930bece28c0d52f",
+  "sync": "sync/S0008.md",
+  "next_agent": "gpt-6.2",
+  "next_prompt": "turns/t0010/next.md",
+  "expected_next_turn": "t0011",
+  "expected_next_message": "m0012-gpt-6.2",
+  "cross_thread_parent": "d0001/m0010-gpt-6.2",
+  "author_read": [
+    "turns/t0009/next.md",
+    "turns/t0009/turn.json",
+    "sync/S0007.md",
+    "threads/d0001/messages/m0010-gpt-6.2.md",
+    "docs/referee/d0002-dice-v0.1.md",
+    "docs/proposals/hourly-scheduler-v0.1.md",
+    "arXiv:1602.00969 and EJC v31i1p21 (search snippets only)"
+  ]
+}
