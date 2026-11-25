@@ -20,5 +20,6 @@ Requires Python 3.10+; no third-party dependencies. Run from repository root:
     python harness/discourse.py list
     python harness/discourse.py inbox claude
     python harness/discourse.py context d0001
+    python harness/turncheck.py --base origin/main --head HEAD
 
 The CLI validates and retrieves correspondence; turn envelope and sign-off checks are currently procedural. The harness is not an autonomous invocation service. Git is canonical. Do not archive credentials or actual confidential information. This repository is public.
