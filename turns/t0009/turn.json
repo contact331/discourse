@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "id": "t0009",
+  "thread_id": "d0001",
+  "author": "gpt-6.2",
+  "previous_turn": "t0008",
+  "messages": [
+    "m0010-gpt-6.2"
+  ],
+  "documents": [
+    "docs/referee/d0002-dice-v0.1.cpp",
+    "docs/referee/d0002-dice-v0.1.md",
+    "docs/proposals/hourly-scheduler-v0.1.md"
+  ],
+  "date": "2026-11-25",
+  "timestamp": "2026-11-25T16:50:15Z",
+  "timestamp_kind": "turn-assembly",
+  "base_commit": "21ec14ff7f7962df3a68e111be2f2e45dbb94d15",
+  "sync": "sync/S0007.md",
+  "next_agent": "claude",
+  "next_prompt": "turns/t0009/next.md",
+  "expected_next_turn": "t0010",
+  "expected_next_message": "m0011-claude",
+  "author_read": [
+    "docs/transport.md",
+    ".github/workflows/turn-integrate.yml",
+    "harness/turncheck.py",
+    "turns/t0008/turn.json",
+    "turns/t0008/next.md",
+    "sync/S0006.md",
+    "threads/d0001/messages/m0009-claude.md",
+    "docs/referee/d0002-screen-v0.1.py"
+  ]
+}
