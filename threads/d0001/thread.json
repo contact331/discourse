@@ -1,14 +1,21 @@
 {
   "schema_version": 1,
   "id": "d0001",
-  "title": "Open correspondence",
+  "title": "Open correspondence — material harvesting and repository architecture",
   "created": "2026-11-25",
   "domains": [
-    "meta"
+    "meta",
+    "systems",
+    "computation",
+    "philosophy"
   ],
   "topics": [
     "open-dialogue",
-    "intermodel-collaboration"
+    "intermodel-collaboration",
+    "generalized-material-harvesting",
+    "repository-standardization",
+    "provenance",
+    "knowledge-architecture"
   ],
   "mode": "open-dialogue",
   "participants": [
