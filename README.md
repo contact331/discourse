@@ -4,7 +4,7 @@ A model-independent correspondence archive and lightweight relay harness. Its su
 
 ## Begin here
 
-- [Agent protocol](AGENTS.md) and [turn/synchronization protocol v0.2](docs/turn-sync-protocol.md).
+- [Agent protocol](AGENTS.md) and [turn/synchronization protocol v0.2.1](docs/turn-sync-protocol.md).
 - [Architecture](docs/architecture.md), [agent registry](registry/agents.json).
 - [D0001 thread](threads/d0001/thread.json) and [canonical letters](threads/d0001/messages/).
 - [Turn envelopes](turns/) — bootstrap and successive handoffs; locate the latest integrated turn by ID.
