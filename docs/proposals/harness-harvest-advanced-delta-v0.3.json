@@ -1,0 +1,248 @@
+{
+  "schema_version": "0.3",
+  "status": "auxiliary research delta, not adopted; no formal turn advanced",
+  "base": "Harness Harvest v0.2 H001-H036",
+  "scope": "24 candidates or refinements; source-described methods and proposed applications distinguished; no measured uplift",
+  "items": [
+    {
+      "id": "H037",
+      "name": "Rival-model discrimination",
+      "family": "reasoning",
+      "lineage": "D10; v1.1 rival_models",
+      "evidence_status": "registered evidence contract",
+      "mechanism": "Compare plausible models and their distinct predictions; preserve inconclusive cases.",
+      "acceptance": "Paired indistinguishable/discriminating cases produce justified abstention and correct discrimination.",
+      "related_existing": "H025"
+    },
+    {
+      "id": "H038",
+      "name": "Elimination and ablation",
+      "family": "reasoning",
+      "lineage": "D11; v1.1 rival_models optional elimination; parallel review provenance correction",
+      "evidence_status": "source-inspired adaptation",
+      "mechanism": "Change one suspected cause; use a placebo and reproduce the original defect.",
+      "acceptance": "Only targeted change removes the reproducible defect; placebo does not.",
+      "related_existing": "H022 H033"
+    },
+    {
+      "id": "H039",
+      "name": "Assumption sensitivity thresholds",
+      "family": "reasoning",
+      "lineage": "D12",
+      "evidence_status": "proposed",
+      "mechanism": "Vary decision-driving assumptions within justified ranges and locate decision boundaries.",
+      "acceptance": "A sign-changing case is qualified; a stable case reports tested range.",
+      "related_existing": "H025"
+    },
+    {
+      "id": "H040",
+      "name": "Analogical transfer mapping",
+      "family": "reasoning",
+      "lineage": "D14; v1.1 semantic_transfer",
+      "evidence_status": "registered evidence contract",
+      "mechanism": "Bind source-target relationships, invariants, exceptions and tests.",
+      "acceptance": "Held-out changed-domain case preserves invariant and rejects a false analogy.",
+      "related_existing": "H028"
+    },
+    {
+      "id": "H041",
+      "name": "Orthogonal numerical verification",
+      "family": "reasoning",
+      "lineage": "D15; v1.1 quantitative_check",
+      "evidence_status": "registered evidence contract",
+      "mechanism": "Use independent calculation, units or solved limit rather than duplicating assumptions.",
+      "acceptance": "Detect shared-denominator error; accept a valid control.",
+      "related_existing": "H022 H025"
+    },
+    {
+      "id": "H042",
+      "name": "Forecast resolution discipline",
+      "family": "reasoning",
+      "lineage": "D16",
+      "evidence_status": "conditional proposal",
+      "mechanism": "Freeze issue time, input cutoff, horizon, resolution source and comparator.",
+      "acceptance": "Late source excluded; unresolved stays unknown; resolved scores reproducible.",
+      "related_existing": "H001 H032"
+    },
+    {
+      "id": "H043",
+      "name": "Decisive-observation selection",
+      "family": "reasoning",
+      "lineage": "D18",
+      "evidence_status": "proposed",
+      "mechanism": "Record conflicting or unknown evidence and the observation that would change a conclusion.",
+      "acceptance": "New evidence updates only the claims it resolves.",
+      "related_existing": "H025"
+    },
+    {
+      "id": "H044",
+      "name": "Cross-representation semantic fidelity",
+      "family": "reasoning",
+      "lineage": "D22",
+      "evidence_status": "proposed",
+      "mechanism": "Check equivalent claims across figures, prose, data and machine outputs.",
+      "acceptance": "Wrong denominator or changed conclusion is detected while valid alternate layout passes.",
+      "related_existing": "H023 H025"
+    },
+    {
+      "id": "H045",
+      "name": "Alternative interpretation prototyping",
+      "family": "reasoning",
+      "lineage": "D23",
+      "evidence_status": "conditional proposal",
+      "mechanism": "Develop two genuinely different treatments; allow rejection of both.",
+      "acceptance": "Blind reader recovers intended meaning and distinguishes usable alternatives.",
+      "related_existing": "H028"
+    },
+    {
+      "id": "H046",
+      "name": "Hypothesis workbench",
+      "family": "reasoning",
+      "lineage": "D24; parallel review says agent-proposed with source analogues",
+      "evidence_status": "agent-proposed adaptation",
+      "mechanism": "Keep speculative objects distinct from factual claims and promotion criteria.",
+      "acceptance": "Novel hypothesis can be explored; invented observation cannot enter supported results.",
+      "related_existing": "H005 H025"
+    },
+    {
+      "id": "H047",
+      "name": "Best-of-N and candidate selection",
+      "family": "search and synthesis",
+      "lineage": "Gold I; Claude findings B-C",
+      "evidence_status": "untested named method",
+      "mechanism": "Compare multiple candidates against an explicit rubric and cost budget.",
+      "acceptance": "Matched total resources; improvement over one stronger attempt must be measured.",
+      "related_existing": "H028 H034"
+    },
+    {
+      "id": "H048",
+      "name": "Self-consistency and independent disagreement",
+      "family": "search and synthesis",
+      "lineage": "Gold I; Claude findings G warns of false matches",
+      "evidence_status": "untested named method",
+      "mechanism": "Compare multiple answers without treating agreement as proof.",
+      "acceptance": "Include common-mode wrong consensus and valid minority answer.",
+      "related_existing": "H024 H025"
+    },
+    {
+      "id": "H049",
+      "name": "Quality-diversity search",
+      "family": "search and synthesis",
+      "lineage": "Gold I: novelty search and MAP-Elites",
+      "evidence_status": "untested named method",
+      "mechanism": "Maintain distinct viable solution niches rather than only one highest score.",
+      "acceptance": "Matched budget yields useful alternatives without degrading accepted quality.",
+      "related_existing": "H028"
+    },
+    {
+      "id": "H050",
+      "name": "Bounded branching / debate",
+      "family": "search and synthesis",
+      "lineage": "Gold I: tree of thoughts and multi-agent debate",
+      "evidence_status": "untested named method",
+      "mechanism": "Compare independently developed alternatives with explicit evidence and bounded branches.",
+      "acceptance": "Blind evaluation measures correction, costs and shared errors; dissent retained.",
+      "related_existing": "H024 H028"
+    },
+    {
+      "id": "H051",
+      "name": "Critique and revise",
+      "family": "search and synthesis",
+      "lineage": "Gold V: self-refine/reflexion",
+      "evidence_status": "untested named method",
+      "mechanism": "Revise a candidate against a specific rubric with an explicit stopping condition.",
+      "acceptance": "Compare error correction and regression against equal-resource baseline.",
+      "related_existing": "H023 H034"
+    },
+    {
+      "id": "H052",
+      "name": "Four-arm harness evaluation",
+      "family": "meta-harness",
+      "lineage": "Build docs/sd15plus/BENCHMARK_BATTERY.md",
+      "evidence_status": "documented experimental design",
+      "mechanism": "Compare native, shadow, guided and release-guarded modes at matched resources.",
+      "acceptance": "Retain blinded ratings, human rescues, costs, failures and baseline non-regression.",
+      "related_existing": "H028 H034"
+    },
+    {
+      "id": "H053",
+      "name": "Rule scope, expiry and counterexamples",
+      "family": "meta-harness",
+      "lineage": "Build docs/sd15plus/SCOPE_ANTI_STRANGULATION.md; harness/rules.json; harness/check.py",
+      "evidence_status": "partial implementation",
+      "mechanism": "Each restrictive rule has owner, scope, purpose, severity, review/expiry, counterexample and override.",
+      "acceptance": "Expired project-specific restrictions not silently inherited; soft rule cannot become hard block.",
+      "related_existing": "H029 H035"
+    },
+    {
+      "id": "H054",
+      "name": "Suppressed-path and scope ablation",
+      "family": "meta-harness",
+      "lineage": "Build docs/sd15plus/SCOPE_ANTI_STRANGULATION.md; BENCHMARK_BATTERY.md",
+      "evidence_status": "documented experimental design",
+      "mechanism": "Ask what valid solution a rule forbids; compare with/without the disputed rule.",
+      "acceptance": "Seed known viable paths and measure missed approaches and false stops.",
+      "related_existing": "H028 H034 H053"
+    },
+    {
+      "id": "H055",
+      "name": "Model routing under matched budget",
+      "family": "meta-harness",
+      "lineage": "Gold K",
+      "evidence_status": "untested named method",
+      "mechanism": "Allocate inexpensive methods/models to suitable tasks and escalate when justified.",
+      "acceptance": "Measure cost per accepted output and error rates; escalate difficult cases.",
+      "related_existing": "H034 H035"
+    },
+    {
+      "id": "H056",
+      "name": "Proof of harness adoption",
+      "family": "meta-harness",
+      "lineage": "Build backend/artifact_run_usage.py",
+      "evidence_status": "implemented local aggregation",
+      "mechanism": "Distinguish declared methods, submitted evidence, linked run IDs and review closure.",
+      "acceptance": "Compare linked and unlinked artifact commits; empty denominator stays unknown.",
+      "related_existing": "H021 H031 H032"
+    },
+    {
+      "id": "H057",
+      "name": "Structure-aware corpus screening",
+      "family": "harvesting",
+      "lineage": "Claude package tools/screen_corpus.py; 01_FINDINGS.md",
+      "evidence_status": "implemented heuristic scanner; ranking improvements proposed",
+      "mechanism": "Shortlist by structure, method terms, mechanism coverage and per-file caps.",
+      "acceptance": "Report unbiased held-out recall, missed leads and candidate reading workload.",
+      "related_existing": "H007 H011"
+    },
+    {
+      "id": "H058",
+      "name": "Near-duplicate retrieval with source lineage",
+      "family": "harvesting",
+      "lineage": "Claude package tools/screen_corpus.py",
+      "evidence_status": "implemented heuristic scanner",
+      "mechanism": "Keep occurrence pointers when removing normalized exact or MinHash near duplicates from search shortlist.",
+      "acceptance": "Same content at two locators remains traceable; distinct meaning not silently discarded.",
+      "related_existing": "H001 H004"
+    },
+    {
+      "id": "H059",
+      "name": "Independent gold-set and miss audit",
+      "family": "harvesting",
+      "lineage": "Claude package 01_FINDINGS.md A3, B; 04_PROCESS_UPGRADES.csv",
+      "evidence_status": "reported evaluation; improvement proposed",
+      "mechanism": "Separate boosted screening from unboosted recall and audit false negatives on held-out material.",
+      "acceptance": "Report recall@k and denominator without using the test anchors to tune retrieval.",
+      "related_existing": "H028 H032 H057"
+    },
+    {
+      "id": "H060",
+      "name": "Lineage versus semantic support",
+      "family": "harvesting",
+      "lineage": "SD15_V1_1_CLAUDE_PARALLEL_REVIEW.md; Claude package 03_GPT_REGISTER_QC.csv",
+      "evidence_status": "reviewed provenance distinction",
+      "mechanism": "Record exact source anchor, whether it supports the principle/procedure, and agent-added adaptation.",
+      "acceptance": "Correctly locate but reject a passage that does not support the attributed method.",
+      "related_existing": "H001 H005 H025"
+    }
+  ]
+}

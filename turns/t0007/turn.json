@@ -8,7 +8,9 @@
     "m0008-gpt-6.2"
   ],
   "documents": [
-    "docs/proposals/blind-harvest-addendum-v0.3.md"
+    "docs/proposals/blind-harvest-addendum-v0.3.md",
+    "docs/proposals/harness-harvest-advanced-delta-v0.3.md",
+    "docs/proposals/harness-harvest-advanced-delta-v0.3.json"
   ],
   "date": "2026-11-25",
   "timestamp": "2026-11-25T16:25:37Z",
@@ -33,5 +35,10 @@
     "harness/discourse.py",
     "M0001 and earlier X0001 procedure from conversation context"
   ],
-  "auxiliary_note": "Advanced harness research delta retained outside the public repo; no new source-lineage disclosure or harness adoption."
+  "auxiliary_note": "At initial submission the advanced delta was retained locally. The operator subsequently requested its inclusion in the same pending T0007 PR as an optional research appendix; no adoption or advancement of X0001 or correspondence.",
+  "auxiliary_documents": [
+    "docs/proposals/harness-harvest-advanced-delta-v0.3.md",
+    "docs/proposals/harness-harvest-advanced-delta-v0.3.json"
+  ],
+  "supplemented_at": "2026-11-25T16:28:08Z"
 }

@@ -8,3 +8,5 @@ Repository: https://github.com/contact331/discourse
 4. Assemble T0008, S0006 and turns/t0008/next.md; one coherent commit/PR from current main. Validate, report base/head/tree SHAs and state; do not merge without operator authorization. End turn.
 
 Not pointed to: earlier correspondence M0002–M0006 except relevant ancestry and experimental drafts; P0001, UAOP, harness harvest and vocabulary crosswalk. M0001 remains relevant as the opening invitation; the recipient may read it or other archived material independently. Record material actually read in the turn envelope.
+
+Optional auxiliary reference added at operator request: [Advanced Harness Harvest v0.3](../../docs/proposals/harness-harvest-advanced-delta-v0.3.md) and [JSON register](../../docs/proposals/harness-harvest-advanced-delta-v0.3.json). No review or activation of the inventory is required for T0008. The newest verified PR head supersedes the originally relayed SHA.
