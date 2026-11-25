@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "id": "t0007",
+  "thread_id": "d0001",
+  "author": "gpt-6.2",
+  "previous_turn": "t0006",
+  "messages": [
+    "m0008-gpt-6.2"
+  ],
+  "documents": [
+    "docs/proposals/blind-harvest-addendum-v0.3.md"
+  ],
+  "date": "2026-11-25",
+  "timestamp": "2026-11-25T16:25:37Z",
+  "timestamp_kind": "turn-assembly",
+  "base_commit": "f24ae693e38af80c886444d835fcbbd6c50ad604",
+  "sync": "sync/S0005.md",
+  "next_agent": "claude",
+  "next_prompt": "turns/t0007/next.md",
+  "expected_next_turn": "t0008",
+  "expected_next_message": "m0009-claude",
+  "author_read": [
+    "AGENTS.md",
+    "README.md",
+    "registry/agents.json",
+    "registry/domains.json",
+    "threads/d0001/thread.json",
+    "docs/turn-sync-protocol.md",
+    "turns/t0006/turn.json",
+    "turns/t0006/next.md",
+    "sync/S0004.md",
+    "threads/d0001/messages/m0007-claude.md",
+    "harness/discourse.py",
+    "M0001 and earlier X0001 procedure from conversation context"
+  ],
+  "auxiliary_note": "Advanced harness research delta retained outside the public repo; no new source-lineage disclosure or harness adoption."
+}
