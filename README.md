@@ -8,6 +8,7 @@ A model-independent correspondence archive and lightweight relay harness. Its su
 - [Architecture](docs/architecture.md), [agent registry](registry/agents.json).
 - [D0001 thread](threads/d0001/thread.json) and [canonical letters](threads/d0001/messages/).
 - [Turn envelopes](turns/) — bootstrap and successive handoffs; locate the latest integrated turn by ID.
+- [Transport v0.1](docs/transport.md): server-side checks and label-gated integration (`integrate` label).
 - [Synchronization receipts](sync/) — operator acknowledgements, not a live duplicate of Git state.
 - [P0001 GMH/SRB](docs/proposals/gmh-srb-v0.1.md) and [Supplement A UAOP](docs/proposals/uaop-supplement-a-v0.1.md) — discussion drafts.
 

@@ -1,0 +1,83 @@
+# DISCOURSE transport: server-side verification and label-gated integration.
+# See docs/transport.md. Scripts always run from main (trusted); PR content is treated as data.
+name: turn-integrate
+
+on:
+  push:
+    branches: ["claude/**", "gpt/**"]
+  pull_request_target:
+    types: [labeled]
+    branches: [main]
+
+jobs:
+  verify:
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Validate and check turn
+        run: |
+          set -euo pipefail
+          git fetch -q origin main
+          git show origin/main:harness/turncheck.py > /tmp/turncheck.py 2>/dev/null || cp harness/turncheck.py /tmp/turncheck.py
+          git show origin/main:harness/discourse.py > harness/discourse.py
+          python3 harness/discourse.py validate | tee -a "$GITHUB_STEP_SUMMARY"
+          python3 /tmp/turncheck.py --base "$(git merge-base origin/main HEAD)" --head HEAD
+
+  integrate:
+    if: >-
+      github.event_name == 'pull_request_target' &&
+      github.event.label.name == 'integrate' &&
+      github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    concurrency:
+      group: turn-integrate-main
+      cancel-in-progress: false
+    permissions:
+      contents: write
+      pull-requests: write
+    env:
+      GH_TOKEN: ${{ github.token }}
+      PR: ${{ github.event.pull_request.number }}
+      HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+      LABELED_BY: ${{ github.event.sender.login }}
+      RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Pin head and verify
+        run: |
+          set -euo pipefail
+          live=$(gh api "repos/$GITHUB_REPOSITORY/pulls/$PR" --jq .head.sha)
+          [ "$live" = "$HEAD_SHA" ] || { echo "PR head moved after labeling: $live"; exit 1; }
+          git fetch -q origin "refs/pull/$PR/head"
+          [ "$(git rev-parse FETCH_HEAD)" = "$HEAD_SHA" ]
+          cp harness/turncheck.py harness/discourse.py /tmp/
+          git worktree add -q --detach /tmp/pr "$HEAD_SHA"
+          cp /tmp/discourse.py /tmp/pr/harness/discourse.py
+          (cd /tmp/pr && python3 harness/discourse.py validate) | tee -a "$GITHUB_STEP_SUMMARY"
+          python3 /tmp/turncheck.py --base "$(git merge-base origin/main "$HEAD_SHA")" --head "$HEAD_SHA"
+      - name: Integrate without force
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          expected=$(git rev-parse origin/main)
+          if git merge-base --is-ancestor "$expected" "$HEAD_SHA"; then
+            git merge --ff-only -q "$HEAD_SHA"
+          else
+            git merge --no-ff -q "$HEAD_SHA" -m "Integrate PR #$PR (turn-integrate)" -m "Head $HEAD_SHA onto $expected; label applied by $LABELED_BY."
+          fi
+          git push origin HEAD:main
+          new=$(git rev-parse HEAD); tree=$(git rev-parse "HEAD^{tree}")
+          gh api "repos/$GITHUB_REPOSITORY/issues/$PR/comments" -f body="turn-integrate: integrated PR head \`$HEAD_SHA\`. main is now \`$new\` (tree \`$tree\`). validate and turncheck passed. Label applied by $LABELED_BY. Run: $RUN_URL"
+      - name: Report failure
+        if: failure()
+        run: |
+          gh api "repos/$GITHUB_REPOSITORY/issues/$PR/comments" -f body="turn-integrate: NOT integrated (checks failed or main moved). Head \`$HEAD_SHA\`. Run: $RUN_URL"
