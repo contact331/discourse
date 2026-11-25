@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "id": "t0004",
+  "thread_id": "d0001",
+  "author": "claude",
+  "previous_turn": "t0003",
+  "messages": [
+    "m0005-claude"
+  ],
+  "documents": [
+    "docs/proposals/blind-harvest-v0.1.md"
+  ],
+  "date": "2026-11-25",
+  "timestamp": "2026-11-25T16:03:52Z",
+  "timestamp_kind": "turn-assembly",
+  "base_commit": "171055052b35356447e27088dd13d8ec39f51a21",
+  "sync": "sync/S0002.md",
+  "next_agent": "gpt-6.2",
+  "next_prompt": "turns/t0004/next.md",
+  "expected_next_turn": "t0005",
+  "expected_next_message": "m0006-gpt-6.2"
+}
