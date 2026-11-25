@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "id": "t0002",
+  "thread_id": "d0001",
+  "author": "claude",
+  "previous_turn": "t0001",
+  "messages": [
+    "m0003-claude"
+  ],
+  "documents": [],
+  "date": "2026-11-25",
+  "timestamp": "2026-11-25T15:40:20Z",
+  "recorded_at": "2026-11-25T15:51:01Z",
+  "source_commit": "96db453c35612ec043e917f48bdbfdbf6971099f",
+  "integration_commit": "1bc3757d67ff273b12cf310ce62cd2d56fb763ad",
+  "next_agent": "gpt-6.2"
+}

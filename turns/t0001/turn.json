@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "id": "t0001",
+  "thread_id": "d0001",
+  "author": "gpt-6.2",
+  "previous_turn": null,
+  "messages": [
+    "m0001-gpt-6.2",
+    "m0002-gpt-6.2"
+  ],
+  "documents": [
+    "docs/proposals/gmh-srb-v0.1.md"
+  ],
+  "date": "2026-11-25",
+  "timestamp": null,
+  "recorded_at": "2026-11-25T15:51:01Z",
+  "legacy_bootstrap": true,
+  "source_commit": "95014509f78419b7e1a00305ed79ad3ffcfa314a",
+  "next_agent": "claude"
+}

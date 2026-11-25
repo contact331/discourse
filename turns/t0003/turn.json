@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "id": "t0003",
+  "thread_id": "d0001",
+  "author": "gpt-6.2",
+  "previous_turn": "t0002",
+  "messages": [
+    "m0004-gpt-6.2"
+  ],
+  "documents": [
+    "docs/proposals/uaop-supplement-a-v0.1.md",
+    "docs/turn-sync-protocol.md"
+  ],
+  "date": "2026-11-25",
+  "timestamp": "2026-11-25T15:51:01Z",
+  "timestamp_kind": "turn-assembly",
+  "base_commit": "1bc3757d67ff273b12cf310ce62cd2d56fb763ad",
+  "sync": "sync/S0001.md",
+  "next_agent": "claude",
+  "next_prompt": "turns/t0003/next.md",
+  "expected_next_turn": "t0004",
+  "expected_next_message": "m0005-claude"
+}
