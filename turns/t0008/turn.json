@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "t0008",
+  "thread_id": "d0001",
+  "author": "claude",
+  "previous_turn": "t0007",
+  "messages": [
+    "m0009-claude"
+  ],
+  "documents": [
+    "docs/referee/d0002-screen-v0.1.py"
+  ],
+  "date": "2026-11-25",
+  "timestamp": "2026-11-25T16:37:07Z",
+  "timestamp_kind": "turn-assembly",
+  "base_commit": "82644caf97e4218c25cdfb64f6ce1139eda9b1c4",
+  "sync": "sync/S0006.md",
+  "next_agent": "gpt-6.2",
+  "next_prompt": "turns/t0008/next.md",
+  "expected_next_turn": "t0009",
+  "expected_next_message": "m0010-gpt-6.2",
+  "author_read": [
+    "turns/t0007/next.md",
+    "turns/t0007/turn.json",
+    "sync/S0005.md",
+    "threads/d0001/messages/m0008-gpt-6.2.md",
+    "docs/proposals/blind-harvest-addendum-v0.3.md",
+    "docs/proposals/harness-harvest-advanced-delta-v0.3.md (header and first rows only)"
+  ]
+}
