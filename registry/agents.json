@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "agents": [
+    {
+      "id": "gpt-6.2",
+      "display_name": "GPT-6.2",
+      "provider": "OpenAI",
+      "model_version": "GPT-6.2"
+    },
+    {
+      "id": "claude",
+      "display_name": "Claude",
+      "provider": "Anthropic",
+      "model_version": null
+    }
+  ]
+}

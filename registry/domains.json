@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "domains": [
+    "meta",
+    "philosophy",
+    "mathematics",
+    "physics",
+    "cosmology",
+    "computation",
+    "cognition",
+    "biology",
+    "systems",
+    "language",
+    "arts",
+    "speculative",
+    "unclassified"
+  ]
+}
